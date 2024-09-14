@@ -1,0 +1,78 @@
+.ligues-list {
+    margin-top: 32px; /*Отступ от поиска*/
+    margin-bottom: 32px; /*Отступ от пагинатора*/
+    padding: 20px; /* Внутренние отступы*/
+    border: 2px solid #e0e0e0; /* Граница */
+    border-radius: 8px; /* Закругление углов для создания округлой формы */
+    outline: none; /* Убираем стандартный outline, который появляется при фокусе */
+    background-color: white; /* цвет фона */
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Автоматическое заполнение с минимальной ширины карточки 250px */
+    grid-gap: 20px; /* Отступ между карточками */
+  }
+  
+  .league-card {
+    background-color: white; /* Белый фон для карточки */
+    border: 1px solid #e0e0e0; /* Граница вокруг карточки */
+    border-radius: 8px; /* Скругление углов карточки */
+    overflow: hidden; /* Прячем содержимое, выходящее за границы карточки */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень вокруг карточки для чёткости */
+    transition: transform 0.2s; /* Плавное изменение при взаимодействии */
+    margin: 10px; /*внешний отступ*/
+    padding: 10px; /*внутренний отступ*/
+    text-align: center; /*контент посередине*/
+  }
+  
+  .league-card img {
+    max-width: 100%; /*отображение картинки в полную ширину*/
+    height: auto; /*автоподсчёт высоты картинки*/
+  }
+  
+  .headerStyle {
+    display: flex;
+    align-items: center;
+    text-align: center; /*контент посередине*/
+    color: #fff; /*цвет шрифта*/
+    height: 64px; /*высота хэдера*/
+    padding-inline: 48px; /*боковые отступы*/
+    background-color: #fff; /* цвет фона */
+  }
+  
+  .contentStyle {
+    margin-left: 15%; /*Параметры для отображения по центру ширины*/
+    margin-right: 15%;
+    text-align: center; /*контент посередине*/
+    min-height: 32px; /*минимальная высота блока, если он пустой*/
+    line-height: 32px; /*высота строки контента*/
+    color: #000; /*цвет шрифта*/
+  }
+  
+  .footerStyle {
+    text-align: center; /*контент посередине*/
+    color: #000; /*цвет шрифта*/
+    background-color: #fff; /* цвет фона */
+  }
+  
+  .tableStyle {
+    margin-top: 16px; /*Отступ от поиска*/
+    margin-bottom: 32px; /*Отступ от футера*/
+    border-radius: 8px; /* Закругление углов для создания округлой формы */
+  }
+  
+  .breadStyle {
+    margin-top: 16px; /*Отступ от хэдера*/
+  }
+  
+  .logo {
+    margin-left: 15%;
+    height: 52px;
+    max-width: auto;
+    margin-right: 12px;
+  }
+  .search-input.enterButton{
+    background-color: #296f9e;
+  }
+  
