@@ -7,7 +7,7 @@ import { Table, Tag, Flex, Layout, Breadcrumb, DatePicker } from "antd";
 import MyHeader from "./Header";
 import "./Leagues";
 
-const TeamDetailPage = () => {
+const TeamMatchesPage = () => {
   const { teamId } = useParams();
   const [matches, setMatches] = useState([]);
   const [dates, setDates] = useState([null, null]);
@@ -50,15 +50,12 @@ const TeamDetailPage = () => {
       params.dateTo = dates[1].format("YYYY-MM-DD");
     }
     try {
-      //запрос для получения названия команды
       const teamInfoResponse = await axios.get(
         `http://localhost:8080/v4/teams/${teamId}`,
         { headers: { "X-Auth-Token": REACT_APP_FOOTBALL_API_KEY }
         
         }
       );
-
-      //запрос для получения матчей команды
       const matchesResponse = await axios.get(
         `http://localhost:8080//v4/teams/${teamId}/matches`,
         {
@@ -232,4 +229,4 @@ const TeamDetailPage = () => {
     </Flex>
   );
 };
-export default TeamDetailPage;
+export default TeamMatchesPage;
