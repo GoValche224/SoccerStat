@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LeagueMatchesPage from './components/LeagueMatches';
 import Leagues from './components/Leagues';
 import TeamsL from './components/TeamsL';
-import TeamMatchesPage from './components/TeamM';
+import TeamMatchesPage from './components/TeamMatches';
 import './App.css';
 
 const App = () => {

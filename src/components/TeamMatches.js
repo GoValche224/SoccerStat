@@ -5,9 +5,9 @@ import Preloader from "./PreLoader";
 import { REACT_APP_FOOTBALL_API_KEY } from "../setting";
 import { Table, Tag, Flex, Layout, Breadcrumb, DatePicker } from "antd";
 import MyHeader from "./Header";
-import "./Leagues.css";
+import "./Leagues";
 
-const TeamMatchesPage = () => {
+const TeamDetailPage = () => {
   const { teamId } = useParams();
   const [matches, setMatches] = useState([]);
   const [dates, setDates] = useState([null, null]);
@@ -232,4 +232,4 @@ const TeamMatchesPage = () => {
     </Flex>
   );
 };
-export default TeamMatchesPage;
+export default TeamDetailPage;
