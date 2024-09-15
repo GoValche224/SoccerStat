@@ -57,7 +57,7 @@ const TeamMatchesPage = () => {
         }
       );
       const matchesResponse = await axios.get(
-        `http://localhost:8080//v4/teams/${teamId}/matches`,
+        `http://localhost:8080/v4/teams/${teamId}/matches`,
         {
           headers: { "X-Auth-Token":  REACT_APP_FOOTBALL_API_KEY  },
           params: params,

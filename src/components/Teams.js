@@ -25,7 +25,7 @@ const Teams = () => {
     const fetchTeams = async () => {
       setLoading(true); //включаем лоадер, пока данные загружаются
       try {
-        const response = await axios.get('http://localhost:8080/v4/teams/', {
+        const response = await axios.get('http://localhost:8080/v4/teams?limit=500', {
           headers: { "X-Auth-Token": REACT_APP_FOOTBALL_API_KEY },
         }); //выполняем запрос к API
         setTeams(response.data.teams); // забираем данные из ответа
