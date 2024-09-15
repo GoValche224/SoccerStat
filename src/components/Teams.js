@@ -9,7 +9,7 @@ import MyHeader from "./Header";
 import "./Leagues.css";
 
 
-const TeamsL = () => {
+const Teams = () => {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
@@ -120,4 +120,4 @@ const TeamsL = () => {
   );
 };
 
-export default TeamsL;
+export default Teams;
