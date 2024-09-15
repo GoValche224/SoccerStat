@@ -2,10 +2,10 @@
     margin-top: 32px; /*Отступ от поиска*/
     margin-bottom: 32px; /*Отступ от пагинатора*/
     padding: 20px; /* Внутренние отступы*/
-    border: 2px solid #e0e0e0; /* Граница */
+    border: 2px solid #f3ebeb; /* Граница */
     border-radius: 8px; /* Закругление углов для создания округлой формы */
     outline: none; /* Убираем стандартный outline, который появляется при фокусе */
-    background-color: white; /* цвет фона */
+    background-color: rgb(100, 127, 186); /* цвет фона */
     display: grid;
     grid-template-columns: repeat(
       auto-fill,
@@ -44,10 +44,10 @@
   .contentStyle {
     margin-left: 15%; /*Параметры для отображения по центру ширины*/
     margin-right: 15%;
-    text-align: center; /*контент посередине*/
+    text-align: Left; /*контент посередине*/
     min-height: 32px; /*минимальная высота блока, если он пустой*/
     line-height: 32px; /*высота строки контента*/
-    color: #000; /*цвет шрифта*/
+    color: rgb(112, 143, 211); /*цвет шрифта*/
   }
   
   .footerStyle {
@@ -67,12 +67,12 @@
   }
   
   .logo {
-    margin-left: 15%;
+    margin-left: 13%;
     height: 52px;
     max-width: auto;
     margin-right: 12px;
   }
   .search-input.enterButton{
-    background-color: #296f9e;
+    background-color: #2a469a;
   }
   
