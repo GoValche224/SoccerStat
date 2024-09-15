@@ -217,5 +217,4 @@ const LeagueMatchesPage = () => {
     </Flex>
   );
 };
-export default LeagueMatches
-Page;
+export default LeagueMatchesPage;

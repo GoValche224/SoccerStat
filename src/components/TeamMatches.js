@@ -52,14 +52,14 @@ const TeamMatchesPage = () => {
     try {
       const teamInfoResponse = await axios.get(
         `http://localhost:8080/v4/teams/${teamId}`,
-        { headers: { "X-Auth-Token": REACT_APP_FOOTBALL_API_KEY }
+        { headers: { "X-Auth-Token": "7a9760314adc4a80b65b0c83481d4b96" }
         
         }
       );
       const matchesResponse = await axios.get(
         `http://localhost:8080//v4/teams/${teamId}/matches`,
         {
-          headers: { "X-Auth-Token": REACT_APP_FOOTBALL_API_KEY },
+          headers: { "X-Auth-Token":  "7a9760314adc4a80b65b0c83481d4b96" },
           params: params,
         }
       );
