@@ -80,9 +80,7 @@ const Teams = () => {
               <Search
                 className="search-input"
                 placeholder="Введите название комманды"
-                allowClear
-                enterButton="Поиск"
-                size="large"
+                enterButton
                 onChange={onInputChange}
                 onSearch={onSearch}
                 value={searchQuery}

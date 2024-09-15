@@ -82,9 +82,7 @@ const Leagues = () => {
               <Search
                 className="search-input"
                 placeholder="Введите название лиги"
-                allowClear
-                enterButton="Поиск"
-                size="large"
+                enterButton
                 onChange={onInputChange}
                 onSearch={onSearch}
                 value={searchQuery}
