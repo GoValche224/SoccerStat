@@ -91,13 +91,7 @@ const TeamMatchesPage = () => {
             match.score.fullTime.home !== null &&
             match.score.fullTime.away !== null
               ? `${match.score.fullTime.home} - ${match.score.fullTime.away}`
-              : "N/A",
-          halfTime:
-            match.score.halfTime &&
-            match.score.halfTime.home !== null &&
-            match.score.halfTime.away !== null
-              ? `${match.score.halfTime.home} - ${match.score.halfTime.away}`
-              : "N/A",
+              : "-",
         },
         homeTeamId: match.homeTeam.id,
         awayTeamId: match.awayTeam.id,
@@ -188,8 +182,8 @@ const TeamMatchesPage = () => {
       key: "score",
       render: (record) => (
         <>
-          <div>Полное время: {record.score.fullTime}</div>
-          <div>Первый тайм: {record.score.halfTime}</div>
+          <div>{record.score.fullTime}</div>
+          
         </>
       ),
     },
